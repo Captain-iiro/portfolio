@@ -1,0 +1,34 @@
+// src/components/Hero.scss
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .hero .text-content {
+    max-width: 50%;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero .highlight {
+    color: #ffb400;
+  }
+  
+  .hero button {
+    background-color: #0099cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .hero .illustration img {
+    width: 300px;
+    height: auto;
+  }
+  

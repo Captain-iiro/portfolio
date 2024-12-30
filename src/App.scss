@@ -1,0 +1,18 @@
+@use './_reset';
+
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url("assets/fonts/SpaceGrotesk-Bold.ttf") format("truetype"),
+         url("assets/fonts/SpaceGrotesk-Medium.ttf") format("truetype"),
+         url("assets/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+  }
+body{
+    font-family: "SpaceGrotesk";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2.58;
+    background-color: #FEFFF0
+}
+.active{
+    transform: scaleX(1);
+}
