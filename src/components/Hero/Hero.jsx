@@ -11,7 +11,7 @@ import Vector from '../../assets/header-img/Vector.svg';
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section id='About' className="hero">
       <div className='content'>
         <div className="text-content">
           <img className='img-frame' src={Frame14} alt="" />

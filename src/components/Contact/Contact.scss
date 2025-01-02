@@ -1,0 +1,71 @@
+.Contact {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Contact-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        height: 400px;
+        color: #000;
+        background-color: #fff;
+        border: 5px solid #000;
+        .V{
+            position: absolute;
+            top: 0;
+            padding: 0;
+            margin: 0;
+            width: 150px;
+            height: 87px;
+            transform: translate(250px,-50px);
+        }
+        h2{
+            font-size: 48px;
+            font-weight: 500;
+            margin-bottom: 40px;
+            line-height: 1.2;
+        }
+        p{
+            line-height: 1.2;
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .button {
+            position: relative;
+            margin-top: 40px;
+            width: 290px;
+            height: 90px;
+            background-color: #BAE6FF;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: bold;
+            border: 8px solid #000;
+            border-radius: 92px;
+
+            .tire {
+                width: 38px;
+                height: 80px;
+                position: absolute;
+                background-image: url('../../assets/hero-img/2.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                transform: translate(20px, 20px) scale(0);
+                transition: transform 0.2s ease-in-out;
+            }
+
+            &:hover {
+                .tire {
+                    transform: translate(20px, 20px) scale(1);
+                }
+            }
+        }
+    }
+}

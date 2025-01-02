@@ -15,9 +15,9 @@ const Navbar = () => {
         <img className='rectangle rectangle3' src={Rectangle} alt="" />
         <img className='rectangle rectangle4' src={Rectangle} alt="" />
       <div className="logo"><span className='text'><a href="/">Captain-iiro</a></span></div>
-        <a className='a' href="#"> <span className='text'>About //</span> </a>
-        <a className='a' href="#"> <span className='text'> Portfolio</span></a>
-        <a className='a' href="#"><span className='text'>Hire Me</span> </a>
+        <a className='a' href="#About"> <span className='text'>About //</span> </a>
+        <a className='a' href="#Projects"> <span className='text'> Projects</span></a>
+        <a className='a' href="#Hire Me"><span className='text'>Hire Me</span> </a>
       </nav>
     </header>
   );

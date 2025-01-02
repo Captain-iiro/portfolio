@@ -1,30 +1,21 @@
 import React from 'react';
 import './Projects.scss';
+import Frame from '../../assets/projects-img/Frame18.svg';
 
 const Projects = () => {
     return (
-        <section className="Projects">
-            <h1>My Projects <img src="" alt="" /></h1>
+        <section id='Projects' className="Projects">
+            <h1>My Projects <img src={Frame} alt="" /></h1>
             <div className="projects-container">
                 <div className='project'>
-                    <div className="project-image"></div>
-                    <div className="project-name">Project Name</div>
-                    <div className="project-description">Project Description</div>
+                    <div className="projet-c project-image"></div>
+                    <div className="projet-c project-name">Project Name</div>
+                    <div className="projet-c project-description">Project Description</div>
                 </div>
                 <div className='project'>
-                    <div className="project-image"></div>
-                    <div className="project-name">Project Name</div>
-                    <div className="project-description">Project Description</div>
-                </div>
-                <div className='project'>
-                    <div className="project-image"></div>
-                    <div className="project-name">Project Name</div>
-                    <div className="project-description">Project Description</div>
-                </div>
-                <div className='project'>
-                    <div className="project-image"></div>
-                    <div className="project-name">Project Name</div>
-                    <div className="project-description">Project Description</div>
+                    <div className="projet-c project-image"></div>
+                    <div className=" projet-c project-name">Project Name</div>
+                    <div className="projet-c project-description">Project Description</div>
                 </div>
             </div>
 

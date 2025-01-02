@@ -1,0 +1,40 @@
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 6px solid #000;
+    height: 150px;
+
+    .social {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        height: 50px;
+    }
+
+    .logo {
+        font-weight: 700;
+
+        .text {
+            line-height: 1.5;
+        }
+    }
+    .social-content {
+        display: inline-block;
+        width: 38px;
+        height: 40px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .github {
+        background-image: url('../../assets/footer-img/Vector.svg');
+    }
+    .twitter{
+        background-image: url('../../assets/footer-img/github-svgrepo-com.svg');
+    }
+    .Whatsapp{
+        background-image: url('../../assets/footer-img/whatsapp-svgrepo-com.svg');
+    }
+}
