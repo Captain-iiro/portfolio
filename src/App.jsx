@@ -4,12 +4,10 @@ import Hero from './components/Hero/Hero';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer'; // Assurez-vous de l'importer correctement
 import './App.scss';
 
 function App() {
-
-
   return (
     <div className="App">
       <Navbar />
@@ -19,7 +17,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
