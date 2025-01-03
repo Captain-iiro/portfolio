@@ -12,6 +12,7 @@ body{
 }
 @media only screen and (max-width: 768px) {
     body{
+        position : fixed;
         font-size: 36px;
         &::before{
             content: "Not available yet on mobile";
