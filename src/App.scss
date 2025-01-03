@@ -10,3 +10,19 @@ body{
 .active{
     transform: scaleX(1);
 }
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 36px;
+        &::before{
+            content: "Not available yet on mobile";
+            display: flex;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 4000px;
+            z-index: 30;
+            color: #FEFFF0;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
