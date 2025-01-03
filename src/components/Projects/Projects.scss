@@ -41,10 +41,23 @@
         gap: 80px;
         width: 100%;
         .project {
+            position: relative;
             background-image: url('../../assets/projects-img/Size7.svg');
             background-size: 536px 536px;
             background-position: center;
             background-repeat: no-repeat;
+            &::before{
+                content: "Not available yet";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                position: absolute;
+                color: aliceblue;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
             .projet-c{
                 margin-left: 42px;
             }

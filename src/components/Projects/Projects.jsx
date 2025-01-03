@@ -4,7 +4,7 @@ import Frame from '../../assets/projects-img/Frame18.svg';
 
 const Projects = () => {
     return (
-        <section id='Projects' className="Projects">
+        <section id="projects" className="Projects">
             <h1>My Projects <img src={Frame} alt="" /></h1>
             <div className="projects-container">
                 <div className='project'>

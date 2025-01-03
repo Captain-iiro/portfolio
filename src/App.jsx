@@ -1,22 +1,25 @@
+// src/App.jsx
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import Skills from './components/Skills/Skills';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer'; // Assurez-vous de l'importer correctement
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

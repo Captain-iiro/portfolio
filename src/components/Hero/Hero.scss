@@ -1,135 +1,148 @@
 .hero {
   position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 56vw;
-    min-height: 720px;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .vector{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56vw;
+  min-height: 720px;
+  width: 100%;
+  margin-bottom: 50px;
+
+  .vector {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0;
-    margin: 0;
     width: 150px;
     height: 87px;
-    transform: translateX(-40px);
+    transform: translate(-40px, 50px);
   }
+
   .highlight {
     color: #ffb400;
   }
-  .content{
-   
-    display: flex;
 
+  .content {
+    display: flex;
     gap: 5vw;
     height: 600px;
 
-    h1{
+    h1 {
       font-weight: 400;
+      line-height: 1.2; /* Meilleure lisibilité */
     }
-    
-    .text-content{
+
+    .text-content {
       width: 47vw;
       font-size: 5vw;
       font-weight: 700;
       line-height: 1;
-      .img-frame{
+
+      .img-frame {
         width: 10vw;
         height: 10vw;
       }
-      .color{ 
+
+      .color {
         position: relative;
         z-index: 1;
       }
-      .img{
+
+      .img {
         display: inline-block;
         width: 70px;
         height: 70px;
-      }
-      .tire{
-        width: 38px;
-        height: 80px;
-        position: absolute;
-      background-image: url('../../assets/hero-img/2.svg');
-      background-position: center;
-      background-repeat: no-repeat;
-      transform: translate(50px, 20px) scale(0);
-      transition: transform 0.2s ease-in-out;
+        object-fit: contain; /* Meilleure gestion des proportions */
       }
     }
-    .illustration{
+
+    .illustration {
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-        width: 40vw;
-        height: 790px;
-        background-image: url('../../assets/hero-img/cadre.svg');
-        background-size: 40vw 790px;
-        background-position: center;
-        background-repeat: no-repeat;
-        .absolute{
-          position: absolute;
-          font-size: 20px;
-          font-weight: 700;
-          z-index: 10;
-        }
-        .A{
-          left: 0;
-          bottom: 430px;
-        }
-        .B{
-          right: 0;
-          bottom: 100px;
-        }
-        
-        .img-face{
-          display: inline-block;
-          transform: translateY(10px);
-        }
-        .text{
-          transform: translate(-15vw, -25vw) rotate(-23deg);
-        }
-        .photo{
-          position: relative;
-          top: 0.5vw;
-          width: 29vw;
-          height: 27.5vw;
-          border: 3px solid #000;
-        }
-        .fleche{
-          transform: translate(-10vw, -21vw);
-          width: 20vw;
-          height: 130px;
+      width: 40vw;
+      height: 790px;
+      background-image: url('../../assets/hero-img/cadre.svg');
+      background-size: 40vw 790px;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      .absolute {
+        position: absolute;
+        font-size: 20px;
+        font-weight: 700;
+        z-index: 10;
+      }
+
+      .A {
+        left: 0;
+        bottom: 430px;
+      }
+
+      .B {
+        right: 0;
+        bottom: 100px;
+      }
+
+      .img-face {
+        display: inline-block;
+        transform: translateY(10px);
+      }
+
+      .text {
+        transform: translate(-15vw, -25vw) rotate(-23deg);
+      }
+
+      .photo {
+        position: relative;
+        top: 0.5vw;
+        width: 29vw;
+        height: 27.5vw;
+        border: 3px solid #000;
+        object-fit: cover; /* S'assure que l'image s'adapte bien */
+      }
+
+      .fleche {
+        transform: translate(-10vw, -21vw);
+        width: 20vw;
+        height: 130px;
         background-image: url('../../assets/hero-img/fleche.svg');
         background-size: 20vw 130px;
         background-position: center;
         background-repeat: no-repeat;
-        }
+      }
     }
-    
   }
-  
-  .hero button {
+
+  button {
     position: relative;
-    margin-top: 80px;
+    margin-top: 60px;
     width: 290px;
     height: 90px;
-    background-color: #BAE6FF;
-    color: #000000;
+    background-color: #bae6ff;
+    color: #000;
     border: none;
     cursor: pointer;
     font-size: 30px;
     font-weight: bold;
     border: 8px solid #000;
     border-radius: 92px;
-    &:hover{
-      .tire{
+    transition: background-color 0.3s ease;
+    .tire {
+      width: 38px;
+      height: 80px;
+      position: absolute;
+      background-image: url('../../assets/hero-img/2.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: translate(50px, 20px) scale(0);
+      transition: transform 0.2s ease-in-out;
+    }
+    &:hover {
+      
+      .tire {
         transform: translate(50px, 20px) scale(1);
       }
     }
   }
+}

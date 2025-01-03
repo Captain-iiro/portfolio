@@ -2,7 +2,7 @@
 import React from 'react';
 import './Hero.scss';
 import Computer from '../../assets/hero-img/computer.svg';
-import Rface from '../../assets/hero-img/Rface.jpg';
+import Rface from '../../assets/hero-img/Rface.webp';
 import face from '../../assets/hero-img/face.svg';
 import A from '../../assets/hero-img/3.svg';
 import B from '../../assets/hero-img/4.svg';
@@ -14,20 +14,20 @@ const Hero = () => {
     <section id='About' className="hero">
       <div className='content'>
         <div className="text-content">
-          <img className='img-frame' src={Frame14} alt="" />
-          <h1>I develop <img className='img' src={Computer} alt="" /> <span >high-quality</span> <span className='color highlight'>software</span></h1>
+          <img className='img-frame' src={Frame14} alt="Decorative frame" />
+          <h1>I develop <img className='img' src={Computer} alt="Icon of a computer" /> <span >high-quality</span> <span className='color highlight'>software</span></h1>
           <button>See Projects <span className='tire'></span></button>
         </div>
         <div className="illustration">
-          <span className='absolute A'><img src={A} alt="" /></span>
-          <span className='absolute B'><img src={B} alt="" /></span>
-          <span className='absolute text'><img className='img-face' src={face} alt="" />Abdourahman Abdillahi</span>
-          <span className='absolute fleche'></span>
-          <img className='photo' src={Rface} alt="" />
+          <span className='absolute A'><img src={A} alt="Decorative element A in hero section" /></span>
+          <span className='absolute B'><img src={B} alt="Decorative element B in hero section" /></span>
+          <span className='absolute text'><img className='img-face' src={face} alt="Abstract face illustration" />Abdourahman Abdillahi</span>
+          <span className='absolute fleche' aria-hidden="true"></span>
+          <img className='photo' src={Rface} alt="Photo of Abdourahman Abdillahi" />
         </div>
-        
+
       </div>
-      <img className='vector' src={Vector} alt="" />
+      <img className='vector' src={Vector} alt="Decorative vector graphic" />
     </section>
   );
 };
