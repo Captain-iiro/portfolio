@@ -3,10 +3,22 @@
 body{
     font-family: "Space Grotesk";
     font-weight: 400;
-    font-size: 24px;
     line-height: 1.5;
     background-color: #FEFFF0;
 }
 .active{
     transform: scaleX(1);
+}
+@media (max-width: 1220px) {
+    .hero {
+        justify-content: start;
+        align-items: center;
+        .content {
+            flex-direction: column;
+            .text-content {
+                width: 100%;
+                font-size: 2rem;
+            }
+        }
+    }
 }

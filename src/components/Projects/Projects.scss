@@ -4,7 +4,7 @@
     h1 {
         position: relative;
         font-weight: 400;
-        font-size: 6.3vw;
+        font-size: 5rem;
         margin-top: 100px;
         text-align: center;
         margin: 0;
@@ -17,15 +17,15 @@
         &::after {
             content: '';
             position: absolute;
-            top: 13vw;
-            right: 36vw;
-            width: 25vw;
+            top: 8rem;
+            width: 28rem;
             min-width: 117px;
             height: 15px;
             background-image: url('../../assets/projects-img/ligne.svg');
             background-size: 360px 15px;
             background-position: center;
             background-repeat: no-repeat;
+            transform: translateX(-31rem);
             z-index: 10;
         }
     }
