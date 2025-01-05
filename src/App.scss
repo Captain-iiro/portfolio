@@ -10,15 +10,63 @@ body{
     transform: scaleX(1);
 }
 @media (max-width: 1220px) {
+    .navbar {
+        min-width: 700px;
+    }
     .hero {
-        justify-content: start;
-        align-items: center;
-        .content {
+        height: 950px;
+        .content { 
             flex-direction: column;
+            gap: 52px;
+            height: 56.5rem;
             .text-content {
                 width: 100%;
-                font-size: 2rem;
+                height: 319px;
+                font-size: 2.6rem;
+                padding: 0 10vw;
+                h1{
+                    margin: 0;
+                    padding: 0;
+                    width: 90%;
+                }
+            }
+            button{
+                min-height: 52px;
+                flex-shrink: 0;
+            }
+            .illustration{
+                width: 40vw;
+                min-width: 276px;
+                height: 476px;
             }
         }
+    }
+}
+@media (max-width: 900px){
+    .header{
+        border-bottom: none;
+        .navbar {
+            width: 46vw;
+            min-width: 271px;
+            flex-shrink: 0;
+            font-size: 1.2rem;
+            .logo{
+                border-right: none;
+            }
+            .a{
+                display: none;
+            }
+        }
+        .img{
+            display: none;
+        }
+    }
+    
+    .Footer{
+        justify-content: center;
+        height: 276px;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
     }
 }

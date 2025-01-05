@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40.5rem;
+  height: 56vw;
   min-height: 720px;
   width: 100%;
   margin-bottom: 50px;
@@ -24,7 +24,7 @@
   .content {
     display: flex;
     gap: 5vw;
-    height: 40rem;
+    height: 600px;
 
     h1 {
       font-weight: 400;
@@ -32,15 +32,18 @@
     }
 
     .text-content {
+      display: flex;
+      flex-direction: column;
       width: 47vw;
-      min-width: 300px;
       font-size: 4rem;
       font-weight: 700;
       line-height: 1;
 
       .img-frame {
         width: 10vw;
+        min-width: 76px;
         height: 10vw;
+        min-height: 79px;
       }
 
       .color {
@@ -62,8 +65,7 @@
       justify-content: center;
       align-items: center;
       width: 40vw;
-      min-width: 300px;
-      height: 49rem;
+      height: 790px;
       background-image: url('../../assets/hero-img/cadre.svg');
       background-size: clamp(400px, 40vw, 790px) clamp(400px, 40vw, 790px);
       background-position: center;
@@ -101,7 +103,7 @@
         width: 29vw;
         height: 27.5vw;
         border: 3px solid #000;
-        object-fit: cover; /* S'assure que l'image s'adapte bien */
+        object-fit: cover;
       }
 
       .fleche {
