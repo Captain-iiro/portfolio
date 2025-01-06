@@ -164,6 +164,9 @@ body{
     .Contact{
         .Contact-container{
             min-width: 323px;
+            .V{
+                transform: translate(0px,-50px);
+            }
             h2{
                 font-size: 18px;
             }
