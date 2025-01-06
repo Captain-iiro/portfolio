@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <> 
         <Helmet>
-        <title>Contactez-Nous - VotreSite.com</title>
+        <title>Contactez-Nous - abdourahmanabdillahi.com</title>
         <meta name="description" content="Contactez-nous pour transformer vos idées en une expérience digitale unique. Envoyez-nous un message dès aujourd'hui !" />
         <meta name="keywords" content="contact, message, projet digital, expérience digitale, transformation digitale" />
     </Helmet>
