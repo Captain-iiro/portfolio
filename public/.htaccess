@@ -1,0 +1,7 @@
+# Utiliser le moteur de réécriture
+RewriteEngine On
+
+# Rediriger les requêtes non correspondantes vers index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
