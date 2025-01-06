@@ -1,7 +1,21 @@
-# Utiliser le moteur de réécriture
+# Activer le moteur de réécriture
 RewriteEngine On
 
-# Rediriger les requêtes non correspondantes vers index.html
+# Rediriger toutes les requêtes non correspondantes vers index.html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [L]
+
+# Bloquer l'accès au dossier admin (si applicable)
+RewriteRule ^admin/ - [F,L]
+
+# Spécifier l'emplacement du fichier sitemap
+Sitemap: https://abdourahmanabdillahi.com/sitemap.xml
+
+# Bloquer un robot spécifique (optionnel)
+User-agent: BadBot
+Disallow: /
+
+# Autoriser un robot spécifique (optionnel)
+User-agent: Googlebot
+Allow: /
