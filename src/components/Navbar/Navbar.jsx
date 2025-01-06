@@ -1,6 +1,6 @@
 // src/components/Navbar/Navbar.jsx
 import React, { useState } from 'react'; // Importer useState
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './Navbar.scss';
 import Vector from '../../assets/header-img/Vector.svg';
@@ -19,6 +19,12 @@ const Navbar = () => {
   // Fonction pour fermer le menu (utile si vous ajoutez un bouton de fermeture)
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const location = useLocation();
+  
+  const isActiveLink = (path, hash = '') => {
+    return location.pathname === path && location.hash === hash;
   };
 
   return (
@@ -73,16 +79,15 @@ const Navbar = () => {
         
         <div className="menu-overlay" onClick={closeMenu}>
           <div className="menu-content" onClick={(e) => e.stopPropagation()}>
-          <div className="logo">
-          <span className='text'>
-            <Link to="/">Captain-iiro</Link>
-          </span>
-        </div>
-            <Link className='a' to="/about" onClick={closeMenu}>
+            <Link
+              className={`a ${location.pathname === '/about' ? 'active-link' : ''}`}
+              to="/about"
+              onClick={closeMenu}
+            >
               <span className='text'>About //</span>
             </Link>
             <HashLink
-              className='a'
+              className={`a ${isActiveLink('/', '#projects') ? 'active-link' : ''}`}
               smooth
               to="/#projects"
               onClick={closeMenu}
@@ -90,7 +95,7 @@ const Navbar = () => {
               <span className='text'>Projects</span>
             </HashLink>
             <HashLink
-              className='a'
+              className={`a ${isActiveLink('/', '#hire-me') ? 'active-link' : ''}`}
               smooth
               to="/#hire-me"
               onClick={closeMenu}

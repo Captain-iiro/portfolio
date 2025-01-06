@@ -91,6 +91,7 @@ box-shadow: 6px 6px 0px 0px rgba(0,0,0,0.25);
     font-weight: 500;
     line-height: 1.5;
     z-index: 1;
+    
 
     
     &::after{
@@ -152,12 +153,27 @@ box-shadow: 6px 6px 0px 0px rgba(0,0,0,0.25);
   gap: 30px;
   text-align: center;
   font-size: 2rem;
-
+  background-color: #fff;
+  padding: 10vw 20vw;
+  border-radius: 10px;
+  
   .a {
     font-size: 2rem;
     /* Ajustez la taille selon vos besoins */
     color: #000;
     position: relative;
+    &.active-link{
+      &::after{
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -20px;
+        height: 10px;
+        width: 90px;
+        background-color: rgba($color: #FFDC58, $alpha: .8);
+        transform: translateX(40px);
+      }
+    }
 
     &::after {
       width: 0;
