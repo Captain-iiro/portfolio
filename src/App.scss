@@ -48,6 +48,21 @@ body{
                 background-size: clamp(400px, 50vw, 790px) clamp(400px, 50vw, 790px);
                 background-position: center;
                 background-repeat: no-repeat;
+                .photo{
+                    width: 34vw;
+                    height: 34vw;
+                    min-width: 260px;
+                    min-height: 260px;
+                }
+                .text {
+                    transform: translate(-5vw, -30vw) rotate(-23deg);
+                }
+                .fleche {
+                    transform: translate(-0vw, -26vw);
+                }
+                .A {
+                    bottom: 330px;
+                  }
             }
         }
     }
@@ -129,6 +144,15 @@ body{
         .illustration {
           width: 60vw;
           background-size: clamp(400px, 60vw, 790px) clamp(400px, 60vw, 790px);
+          .text {
+            transform: translate(2rem, -18rem) rotate(-23deg);
+        }
+          .fleche{
+            transform: translate(5rem, -15rem);
+            min-width: 150px;
+            min-height: 130px;
+            background-size: 150px 130px;
+          }
         }
       }
     }
