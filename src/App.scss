@@ -66,6 +66,31 @@ body{
             }
         }
     }
+    .Projects {
+        h1{
+            font-size: 2.5rem;
+            img{
+                height: 50px;
+                width: 50px;
+            }
+            &::after {
+                display: none;
+            }
+        }
+        .projects-container {
+            grid-template-columns: repeat(1, 315px);
+            grid-template-rows: repeat(2, 315px);
+            justify-content: center;
+            align-items: center;
+            .project {
+                background-size: 536px 536px;
+                .project-image{
+                    width: 272px;
+                    height: 172px;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 900px) {
     .header {
@@ -131,11 +156,31 @@ body{
           }
         }
       }
-  
+      
       .img {
         display: none;
       }
     }
+    .Contact{
+        .Contact-container{
+            min-width: 323px;
+            h2{
+                font-size: 18px;
+            }
+            p{
+                font-size: 13px;
+            }
+            .button{
+                width: 200px;
+                height: 51px;
+                font-size: 1.2rem;
+                
+                .tire{
+                    display: none;
+                }
+            }
+        }
+      }
   
     .hero {
       .content {
@@ -156,7 +201,10 @@ body{
         }
       }
     }
-  
+    .Skills{
+        font-size: 1rem;
+        gap: 1rem;
+    }
     .Footer {
       justify-content: center;
       height: 276px;

@@ -9,11 +9,10 @@ const Home = () => {
   return (
     <div>
       <Hero />
-       
-      {/* 
       <Skills />
       <Projects />
       <Contact />
+      {/*
       
       */}
       
