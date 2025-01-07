@@ -16,14 +16,14 @@ const Hero = () => {
   return (
     <>
       <Helmet>
-        <title>High-Quality Software Development - abdourahmanabdillahi.com</title>
+        <title>High-Quality Software Development - Captain iiro</title>
         <meta
           name="description"
           content="I develop high-quality software to transform your ideas into innovative digital solutions. Explore my projects and get in touch today!"
         />
         <meta
           name="keywords"
-          content="software development, high-quality software, web development, digital solutions, Abdourahman Abdillahi, captain-iiro"
+          content="software development, high-quality software, web development, digital solutions, Abdourahman Abdillahi, captain-iiro, Captain ciroo, Captain_iiro,abdourahman abdillahi, Abdourahman Abdillahi Abdi, Abdou dev"
         />
          <link rel="manifest" href="/manifest.json" />
       </Helmet>

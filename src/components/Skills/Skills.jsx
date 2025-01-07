@@ -6,8 +6,6 @@ const Skills = () => {
     return (
         <>
         <Helmet>
-                <title>My Skills - Abdourahman Abdillahi</title>
-                
                 <meta
                     name="keywords"
                     content="React.js, Adonis.js, Expo, Laravel, SCSS, software development, web development, Abdourahman Abdillahi, Captain-iiro Skills"
