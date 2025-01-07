@@ -16,7 +16,6 @@ const Hero = () => {
   return (
     <>
       <Helmet>
-        <title>High-Quality Software Development - Captain iiro</title>
         <meta
           name="description"
           content="I develop high-quality software to transform your ideas into innovative digital solutions. Explore my projects and get in touch today!"
