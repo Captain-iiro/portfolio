@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.scss';
 import V from '../../assets/Contact-img/Vector.svg';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
     return (

@@ -10,7 +10,7 @@ import B from '../../assets/hero-img/4.svg';
 import B_min from '../../assets/hero-img/4-mini.svg';
 import Frame14 from '../../assets/hero-img/Frame14.svg';
 import Vector from '../../assets/header-img/Vector.svg';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Hero = () => {
   return (

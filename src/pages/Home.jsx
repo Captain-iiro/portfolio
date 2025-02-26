@@ -4,7 +4,7 @@ import Hero from '../components/Hero/Hero';
 import Skills from '../components/Skills/Skills';
 import Projects from '../components/Projects/Projects';
 import Contact from '../components/Contact/Contact';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   return (

@@ -1,7 +1,6 @@
 import React from 'react';
 import './Projects.scss';
 import Frame from '../../assets/projects-img/Frame18.svg';
-import { Helmet } from 'react-helmet';
 
 const Projects = () => {
     return (

@@ -3,7 +3,7 @@ import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import Dalle from '../Dalle.webp';
 import './About.scss'; // Optionnel: ajoute tes styles
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   return (
