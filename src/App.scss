@@ -78,7 +78,7 @@ body{
             }
         }
         .projects-container {
-            grid-template-columns: repeat(1, 315px);
+            grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
             grid-template-rows: repeat(2, 315px);
             justify-content: center;
             align-items: center;
