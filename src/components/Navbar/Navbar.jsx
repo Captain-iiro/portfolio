@@ -51,11 +51,11 @@ const Navbar = () => {
 
         {/* Liens de navigation */}
         <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <Link className='a' to="/about" onClick={closeMenu}>
+          <Link className={`a ${location.pathname === '/about' ? 'acive-link-desk' : ''}`} to="/about" onClick={closeMenu}>
             <span className='text'>About //</span>
           </Link>
           <HashLink
-            className='a'
+            className={`a ${location.pathname + location.hash === '/#projects' ? 'acive-link-desk' : ''}`}
             smooth
             to="/#projects"
             onClick={closeMenu}
@@ -63,7 +63,7 @@ const Navbar = () => {
             <span className='text'>Projects</span>
           </HashLink>
           <HashLink
-            className='a'
+            className={`a ${location.pathname + location.hash === '/#hire-me' ? 'acive-link-desk' : ''}`}
             smooth
             to="/#hire-me"
             onClick={closeMenu}

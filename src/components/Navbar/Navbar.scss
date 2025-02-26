@@ -114,6 +114,11 @@ box-shadow: 6px 6px 0px 0px rgba(0,0,0,0.25);
   a:last-child{
     border-right: none;
   }
+  .acive-link-desk{
+    &::after{
+      transform: scaleX(1);
+    }
+  }
 
   /* Liens de navigation supplémentaires (pour l'overlay) */
   #button{

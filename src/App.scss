@@ -214,6 +214,9 @@ body{
       flex-direction: column;
       gap: 30px;
       align-items: center;
+      .element3{
+        order: 99;
+      }
     }
   
     .about-section {

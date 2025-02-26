@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 const Footer = () => {
     return (
         <>
-        <Helmet>
+            <Helmet>
                 <script type="application/ld+json">
                     {`
                         {
@@ -33,19 +33,19 @@ const Footer = () => {
                 </script>
             </Helmet>
             <section className="Footer" role="contentinfo">
-            <div className="logo"><span className='text'><a href="/">Captain-iiro</a></span></div>
-            <div className="footer-bottom">
+                <div className="logo"><span className='text'><a href="/">Captain-iiro</a></span></div>
+                <div className="footer-bottom element3">
                     <p>&copy; {new Date().getFullYear()} Captain-iiro. All rights reserved.</p>
-            </div>
-            <div className='social'>
-                <div><a href="https://github.com/Captain-iiro" target="_blank" rel="noopener noreferrer" aria-label="View my GitHub profile" className='social-content twitter'></a></div>
-                <div><a href="https://x.com/Captain_iiro" target="_blank" rel="noopener noreferrer" aria-label="Follow me on X" className='social-content github'></a></div>
-                <div><a href="https://wa.me/25377320261"  target="_blank" rel="noopener noreferrer" aria-label="Contact me on WhatsApp" className='social-content Whatsapp'></a></div>
-            </div>
-            
-        </section>
+                </div>
+                <div className='social'>
+                    <div><a href="https://github.com/Captain-iiro" target="_blank" rel="noopener noreferrer" aria-label="View my GitHub profile" className='social-content twitter'></a></div>
+                    <div><a href="https://x.com/Captain_iiro" target="_blank" rel="noopener noreferrer" aria-label="Follow me on X" className='social-content github'></a></div>
+                    <div><a href="https://wa.me/25377320261" target="_blank" rel="noopener noreferrer" aria-label="Contact me on WhatsApp" className='social-content Whatsapp'></a></div>
+                </div>
+
+            </section>
         </>
-       
+
     );
 }
 export default Footer;
