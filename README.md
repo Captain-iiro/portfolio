@@ -73,6 +73,9 @@ npm run dev
 
 5. Open your browser and visit `http://localhost:3000`
 
+## Licence
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 
 ## 📬 Contact
