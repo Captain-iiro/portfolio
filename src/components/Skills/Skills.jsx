@@ -1,25 +1,23 @@
-import React from 'react';
-import './Skills.scss';
-import { Helmet } from 'react-helmet-async';
+import "./Skills.scss";
+import { Helmet } from "react-helmet-async";
 
 const Skills = () => {
-    return (
-        <>
-        <Helmet>
-                <meta
-                    name="keywords"
-                    content="React.js, Adonis.js, Expo, Laravel, SCSS, software development, web development, Abdourahman Abdillahi, Captain-iiro Skills"
-                />
-        </Helmet>
-        <section className="Skills">
-            <span>React js</span>
-            <span>Adonis js</span>
-            <span>Expo</span>
-            <span>Laravel</span>
-            <span>SCSS</span>
-        </section>
-        </>
-        
-    );
-}
+  return (
+    <>
+      <Helmet>
+        <meta
+          name="keywords"
+          content="React.js, Adonis.js, Expo, Laravel, SCSS, software development, web development, Abdourahman Abdillahi, Captain-iiro Skills"
+        />
+      </Helmet>
+      <section className="Skills">
+        <span>React js</span>
+        <span>Adonis js</span>
+        <span>Expo</span>
+        <span>Laravel</span>
+        <span>SCSS</span>
+      </section>
+    </>
+  );
+};
 export default Skills;
