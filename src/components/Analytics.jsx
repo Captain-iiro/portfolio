@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import Plausible from 'plausible-tracker';
+import { useEffect } from "react";
+import Plausible from "plausible-tracker";
 
 const plausible = Plausible({
-  domain: 'abdourahmanabdillahi.com',
+  domain: "abdourahmanabdillahi.com",
   trackLocalhost: true, // Optionnel: à false en production
 });
 
