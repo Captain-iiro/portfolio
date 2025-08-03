@@ -1,13 +1,15 @@
 import "../src/_reset.scss";
 import "../src/App.scss";
 import { HelmetProvider } from "react-helmet-async";
-import React from "react";
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
   decorators: [
-    (Story) =>
-      React.createElement(HelmetProvider, null, React.createElement(Story)),
+    (Story) => (
+      <HelmetProvider>
+        <Story />
+      </HelmetProvider>
+    ),
   ],
   parameters: {
     controls: {
