@@ -64,8 +64,8 @@ const About = () => {
           />
           <article>
             <p>
-              Hi, I'm Abdourahman Abdillahi Abdi, a passionate web developer
-              from{" "}
+              Hi, I&apos;m Abdourahman Abdillahi Abdi, a passionate web
+              developer from{" "}
               <a
                 className="a"
                 href="https://fr.wikipedia.org/wiki/Djibouti_(ville)"
@@ -86,9 +86,9 @@ const About = () => {
               >
                 Dar Al-Hanan Hospital
               </a>{" "}
-              in Djibouti. From a young age, I've been naturally inclined to
-              solve problems and have always been passionate about tinkering and
-              creating things with my hands.
+              in Djibouti. From a young age, I&apos;ve been naturally inclined
+              to solve problems and have always been passionate about tinkering
+              and creating things with my hands.
             </p>
             <p>
               With a strong foundation in programming and a drive to create
@@ -133,7 +133,7 @@ const About = () => {
             </p>
             <p>
               I thrive on solving real-world challenges, from crafting seamless
-              user experiences to developing robust backend APIs. I'm also
+              user experiences to developing robust backend APIs. I&apos;m also
               deeply committed to learning and exploring new tools to stay ahead
               in the ever-evolving tech landscape.
             </p>
