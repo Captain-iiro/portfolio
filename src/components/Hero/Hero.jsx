@@ -24,7 +24,10 @@ const Hero = () => {
             </h1>
           </header>
           <a href="#projects" className="button" aria-label="See Projects">
-            See Projects <span className="tire"></span>
+            <button className="button">
+              {" "}
+              See Projects <span className="tire"></span>
+            </button>
           </a>
         </div>
 
