@@ -18,7 +18,22 @@
   }
 
   .highlight {
-    color: #ffb400;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0.02em;
+      left: 0;
+      width: 100%;
+      height: 0.6em;
+      background: #ffdc58;
+      z-index: -1;
+      transform: rotateX(0deg);
+      transform-origin: bottom left;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
   }
 
   .content {
@@ -66,7 +81,7 @@
       align-items: center;
       width: 40vw;
       height: 790px;
-      background-image: url('../../assets/hero-img/cadre.svg');
+      background-image: url("../../assets/hero-img/cadre.svg");
       background-size: clamp(400px, 40vw, 790px) clamp(400px, 40vw, 790px);
       background-position: center;
       background-repeat: no-repeat;
@@ -110,7 +125,7 @@
         transform: translate(-10vw, -21vw);
         width: 20vw;
         height: 130px;
-        background-image: url('../../assets/hero-img/fleche.svg');
+        background-image: url("../../assets/hero-img/fleche.svg");
         background-size: 20vw 130px;
         background-position: center;
         background-repeat: no-repeat;
@@ -121,8 +136,12 @@
   button {
     position: relative;
     margin-top: 4vw;
-    width: 290px;
-    height: 90px;
+    width: 29vw;
+    height: 9vw;
+    max-width: 290px;
+    max-height: 90px;
+    min-width: 222px;
+    min-height: 60px;
     background-color: #bae6ff;
     color: #000;
     border: none;
@@ -137,17 +156,165 @@
       width: 38px;
       height: 80px;
       position: absolute;
-      background-image: url('../../assets/hero-img/2.svg');
+      background-image: url("../../assets/hero-img/2.svg");
       background-position: center;
       background-repeat: no-repeat;
       transform: translate(50px, 20px) scale(0);
       transition: transform 0.2s ease-in-out;
     }
     &:hover {
-      
       .tire {
         transform: translate(50px, 20px) scale(1);
       }
     }
   }
 }
+
+/* Media Queries pour Hero */
+
+/* Très grands écrans (4K, ultra-wide) */
+@media (min-width: 1920px) {
+  .hero {
+    .content {
+      .illustration {
+        height: 1090px;
+        background-size: clamp(400px, 40vw, 1090px) clamp(400px, 40vw, 1090px);
+        transform: translateY(-200px);
+      }
+    }
+  }
+}
+
+/* Mobiles grands */
+@media (max-width: 900px) {
+  .hero {
+    height: 950px;
+
+    .content {
+      flex-direction: column;
+      gap: 150px;
+      height: 56.5rem;
+      justify-content: center;
+      align-items: center;
+
+      .text-content {
+        width: 100%;
+        height: 319px;
+        font-size: 2.6rem;
+        padding-left: 5vw;
+
+        h1 {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+        }
+      }
+
+      .illustration {
+        flex-shrink: 0;
+        width: 60vw;
+        min-width: 400px;
+        height: 570px;
+        min-height: 400px;
+        background-image: url("../../assets/hero-img/cadre-mini.svg");
+        background-size: clamp(400px, 60vw, 790px) clamp(400px, 60vw, 790px);
+
+        .photo {
+          width: 40vw;
+          height: 40vw;
+          min-width: 260px;
+          min-height: 260px;
+        }
+
+        .text {
+          transform: translate(2rem, -19rem) rotate(-23deg);
+        }
+
+        .fleche {
+          transform: translate(5rem, -16rem);
+          min-width: 150px;
+          min-height: 130px;
+          background-size: 140px 100px;
+        }
+
+        .A {
+          bottom: 330px;
+        }
+      }
+      button {
+        .tire {
+          transform: translate(20px, 20px) scale(1);
+        }
+      }
+    }
+  }
+}
+
+/* Petits mobiles */
+
+@media (max-width: 375px) {
+  .hero {
+    margin-bottom: 50px;
+
+    .content {
+      gap: 200px;
+      .text-content {
+        font-size: 1.6rem;
+      }
+      .illustration {
+        height: 80vw;
+        width: 80vw;
+        min-height: 100px;
+        min-width: 100px;
+        background-size: clamp(100px, 80vw, 790px) clamp(100px, 80vw, 790px);
+
+        .absolute {
+          font-size: 5vw;
+        }
+        .photo {
+          width: 50vw;
+          height: 50vw;
+          min-width: 150px;
+          min-height: 150px;
+        }
+        .text {
+          transform: translate(-2rem, -15rem) rotate(-23deg);
+        }
+        .fleche {
+          transform: translate(1rem, -12rem);
+          min-width: 150px;
+          min-height: 130px;
+          background-size: 140px 100px;
+        }
+        .A {
+          bottom: 130px;
+        }
+        .B {
+          right: 0;
+          bottom: 20px;
+        }
+      }
+      button {
+        .tire {
+          transform: translate(10px, 10px) scale(1);
+        }
+      }
+    }
+  }
+}
+/* Mode sombre (optionnel) */
+/* 
+@media (prefers-color-scheme: dark) {
+  .hero {
+    
+  }
+}
+*/
+/* Réduction de mouvement (accessibilité) */
+/* 
+@media (prefers-reduced-motion: reduce) {
+  .hero {
+    
+  }
+}
+*/
