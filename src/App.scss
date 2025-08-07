@@ -1,5 +1,6 @@
 @use "./_reset";
 @import "./assets/fonts/fonts.css";
+
 body {
   font-family: "Space Grotesk";
   font-weight: 400;
@@ -9,6 +10,7 @@ body {
 .active {
   transform: scaleX(1);
 }
+
 @media (max-width: 1220px) {
   .Projects {
     h1 {

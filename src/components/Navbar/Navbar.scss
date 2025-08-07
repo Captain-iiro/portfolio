@@ -147,7 +147,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 100;
   /* Assurez-vous qu'il est au-dessus des autres éléments */
   transition: opacity 0.3s ease-in-out;
 }
@@ -161,6 +161,7 @@
   background-color: #fff;
   padding: 10vw 20vw;
   border-radius: 10px;
+  z-index: 200;
 
   .a {
     font-size: 2rem;
@@ -177,14 +178,15 @@
         height: 0.6em;
         background: #ffdc58;
         z-index: -1;
-        transform: rotateX(0deg);
+        transform: scaleX(1) rotateX(0deg);
         transform-origin: bottom left;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
       }
     }
 
     &::after {
-      width: 0;
+      transform: scaleX(0);
       /* Désactiver l'underline dans l'overlay */
     }
 
@@ -278,7 +280,7 @@
     .navbar {
       min-width: 200px;
       font-size: 1rem;
-      margin-left: 50px;
+      margin-left: 30px;
       #button {
         padding: 0;
         margin-right: 20px;

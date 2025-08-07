@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Abdourahman Abdillahi - Web Developer | Portfolio</title>
+        <title>Abdourahman Abdillahi - Web Developer </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#ffffff" />
         <meta
@@ -29,7 +29,7 @@ const Home = () => {
         <meta property="og:url" content="https://abdourahmanabdillahi.com/" />
         <meta
           property="og:title"
-          content="Abdourahman Abdillahi - Web Developer | Portfolio"
+          content="Abdourahman Abdillahi - Web Developer"
         />
         <meta
           property="og:description"
