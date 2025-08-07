@@ -10,9 +10,6 @@ body {
   transform: scaleX(1);
 }
 @media (max-width: 1220px) {
-  .navbar {
-    min-width: 700px;
-  }
   .Projects {
     h1 {
       font-size: 2.5rem;
@@ -40,74 +37,6 @@ body {
   }
 }
 @media (max-width: 900px) {
-  .header {
-    border-bottom: none;
-
-    .navbar {
-      grid-template-columns: 4fr 1fr;
-      justify-content: center;
-      align-items: center;
-      width: 46vw;
-      min-width: 271px;
-      flex-shrink: 0;
-      font-size: 1.2rem;
-
-      .logo {
-        border-right: none;
-      }
-
-      .a {
-        display: none; // Masquer les liens dans la barre de navigation
-      }
-
-      #button {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10%;
-        height: 40px;
-        width: 40px;
-        padding: 20px;
-        cursor: pointer;
-
-        .span {
-          position: absolute;
-          width: 37px;
-          height: 5px;
-          background-color: #000;
-          border-radius: 10px;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
-        .b {
-          transform: translateY(10px);
-        }
-
-        .c {
-          transform: translateY(-10px);
-        }
-
-        /* Animation du bouton en croix lorsque le menu est ouvert */
-        &.open .span.b {
-          opacity: 0;
-        }
-
-        &.open .span.c {
-          transform: rotate(45deg) translate(5px, 5px);
-        }
-
-        &.open .span {
-          transform: rotate(-45deg) translate(5px, -5px);
-        }
-      }
-    }
-
-    .img {
-      display: none;
-    }
-  }
   .Contact {
     .Contact-container {
       min-width: 323px;
