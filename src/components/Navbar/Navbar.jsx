@@ -9,9 +9,9 @@ import Rectangle from "../../assets/header-img/Rectangle 29.svg";
 
 // Constantes pour les liens de navigation
 const NAV_LINKS = [
-  { to: "/about", text: "About //", isHash: false },
-  { to: "/#projects", text: "Projects", isHash: true },
-  { to: "/#hire-me", text: "Hire Me", isHash: true },
+  { to: "/about", text: "About //", isHash: false, class: "gauche" },
+  { to: "/#projects", text: "Projects", isHash: true, class: "droite" },
+  { to: "/#hire-me", text: "Hire Me", isHash: true, class: "gauche" },
 ];
 
 const Navbar = () => {
@@ -44,7 +44,7 @@ const Navbar = () => {
 
         // Props communes (sans key)
         const commonProps = {
-          className: `a ${activeClass}`,
+          className: `a ${activeClass} ${link.class}`,
           to: link.to,
           onClick: closeMenu,
         };
@@ -99,13 +99,16 @@ const Navbar = () => {
       </nav>
 
       {/* Overlay pour le menu mobile */}
-      {isMenuOpen && (
-        <div className="menu-overlay" onClick={closeMenu}>
-          <div className="menu-content" onClick={(e) => e.stopPropagation()}>
-            {renderNavLinks(true)}
-          </div>
+      <div
+        className={`menu-overlay ${
+          isMenuOpen ? "active-mobile" : "close-mobile"
+        }`}
+        onClick={closeMenu}
+      >
+        <div className="menu-content" onClick={(e) => e.stopPropagation()}>
+          {renderNavLinks(true)}
         </div>
-      )}
+      </div>
     </header>
   );
 };
