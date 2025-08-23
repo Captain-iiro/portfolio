@@ -166,6 +166,47 @@
       }
     }
   }
+  &.close-mobile {
+    display: flex;
+    z-index: 100;
+    animation: menuoverlay-out 0.5s cubic-bezier(0.4, 0, 0.1, 1) forwards;
+    pointer-events: none;
+    opacity: 0;
+    .menu-content {
+      .a {
+        &.droite {
+          animation: menudroite-out 0.5s cubic-bezier(0.4, 0, 0.1, 1) forwards;
+        }
+        &.gauche {
+          animation: menugauche-out 0.5s cubic-bezier(0.4, 0, 0.1, 1) forwards;
+        }
+      }
+    }
+  }
+}
+@keyframes menuoverlay-out {
+  0% {
+    background-color: #ffdc58;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes menudroite-out {
+  0% {
+    transform: translate3d(0px, 0em, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0px, 5em, 0px) rotate(-15deg);
+  }
+}
+@keyframes menugauche-out {
+  0% {
+    transform: translate3d(0px, 0em, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0px, 5em, 0px) rotate(15deg);
+  }
 }
 @keyframes menuoverlayclose {
   0% {
