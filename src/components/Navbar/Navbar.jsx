@@ -1,5 +1,5 @@
 // src/components/Navbar/Navbar.jsx - Version améliorée
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "./Navbar.scss";
@@ -26,6 +26,24 @@ const Navbar = () => {
   const closeMenu = useCallback(() => {
     setIsMenuOpen(false);
   }, []);
+
+  // Gérer le scroll de la page quand le menu mobile est ouvert
+  useEffect(() => {
+    if (isMenuOpen) {
+      // Désactiver le scroll
+      // Alternative plus robuste avec classe CSS
+      document.body.classList.add("menu-open");
+    } else {
+      // Réactiver le scroll
+
+      document.body.classList.remove("menu-open");
+    }
+
+    // Cleanup pour éviter les fuites mémoire
+    return () => {
+      document.body.classList.remove("menu-open");
+    };
+  }, [isMenuOpen]);
 
   // Fonction pour rendre les liens de navigation
   const renderNavLinks = useCallback(
