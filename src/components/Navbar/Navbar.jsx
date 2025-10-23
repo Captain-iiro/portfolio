@@ -98,9 +98,11 @@ const Navbar = () => {
         ))}
 
         <div className="logo">
+          <Link to="/" className="logo-link">
           <span className="text">
-            <Link to="/">Captain-iiro</Link>
+            Captain-iiro
           </span>
+          </Link>
         </div>
 
         {/* Bouton de menu */}

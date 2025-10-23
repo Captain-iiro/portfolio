@@ -9,12 +9,12 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Abdourahman Abdillahi - Web Developer </title>
+        <title>Captain iiro - Abdourahman Abdillahi - Web Developer </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#ffffff" />
         <meta
           name="description"
-          content="Portfolio d'Abdourahman Abdillahi, développeur web passionné de Djibouti. Spécialisé en ReactJS, AdonisJS, SCSS et Expo. Découvrez mes projets et compétences."
+          content="Portfolio d'Abdourahman Abdillahi Alias Captain iiro, développeur web passionné de Djibouti. Spécialisé en ReactJS, AdonisJS, SCSS et Expo. Découvrez mes projets et compétences."
         />
         <meta
           name="keywords"
@@ -29,11 +29,11 @@ const Home = () => {
         <meta property="og:url" content="https://abdourahmanabdillahi.com/" />
         <meta
           property="og:title"
-          content="Abdourahman Abdillahi - Web Developer"
+          content="Captain iiro - Abdourahman Abdillahi - Web Developer"
         />
         <meta
           property="og:description"
-          content="Portfolio d'Abdourahman Abdillahi, développeur web passionné de Djibouti. Spécialisé en ReactJS, AdonisJS, SCSS et Expo."
+          content="Portfolio d'Abdourahman Abdillahi Alias Captain iiro, développeur web passionné de Djibouti. Spécialisé en ReactJS, AdonisJS, SCSS et Expo. Découvrez mes projets et compétences."
         />
         <meta
           property="og:image"
@@ -41,7 +41,7 @@ const Home = () => {
         />
         <meta
           property="og:site_name"
-          content="Abdourahman Abdillahi Portfolio"
+          content="Capain iiro Abdourahman Abdillahi Portfolio"
         />
         <meta property="og:locale" content="fr_FR" />
 
@@ -57,7 +57,7 @@ const Home = () => {
         />
         <meta
           property="twitter:description"
-          content="Portfolio d'Abdourahman Abdillahi, développeur web passionné de Djibouti. Spécialisé en ReactJS, AdonisJS, SCSS et Expo."
+          content="Portfolio d'Abdourahman Abdillahi Alias Captain iiro, développeur web passionné de Djibouti. Spécialisé en ReactJS, AdonisJS, SCSS et Expo. Découvrez mes projets et compétences."
         />
         <meta
           property="twitter:image"
