@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 56vw;
+  height: 66vw;
   min-height: 720px;
   width: 100%;
   margin-bottom: 50px;
@@ -39,9 +39,10 @@
   .content {
     display: flex;
     gap: 5vw;
-    height: 600px;
+    height: 840px;
 
     h1 {
+      font-size: 4rem;
       font-weight: 400;
       line-height: 1.2; /* Meilleure lisibilité */
     }
@@ -53,6 +54,7 @@
       font-size: 4rem;
       font-weight: 700;
       line-height: 1;
+      margin-top: 200px;
 
       .img-frame {
         width: 10vw;
@@ -137,7 +139,7 @@
     position: relative;
     margin-top: 4vw;
     width: 29vw;
-    height: 9vw;
+    height: 7vw;
     max-width: 290px;
     max-height: 90px;
     min-width: 222px;
