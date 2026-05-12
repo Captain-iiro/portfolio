@@ -15,7 +15,7 @@ const Skills = () => {
         <span>Adonis js</span>
         <span>Expo</span>
         <span>Laravel</span>
-        <span>SCSS</span>
+        <span>Flutter</span>
       </section>
     </>
   );

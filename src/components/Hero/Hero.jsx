@@ -50,7 +50,7 @@ const Hero = () => {
               src={face}
               alt="Abstract face illustration"
             />
-            Abdourahman Abdillahi
+            Abdourahman - Captain iiro
           </span>
           <span className="absolute fleche" aria-hidden="true"></span>
           <img
