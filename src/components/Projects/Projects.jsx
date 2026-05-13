@@ -22,7 +22,7 @@ const Projects = () => {
                 </div>
                 <div className="projet-button">
                   <Link to="/" className="project-link">
-                    <span className="text">/</span>
+                    <span className="text"></span>
                   </Link>
                 </div>
               </div>
