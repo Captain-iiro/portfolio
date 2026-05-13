@@ -16,11 +16,13 @@ const Projects = () => {
               <div className="projet-description">
                 <div className="project-titre">
                   <div className="project-name">Project Name</div>
-                  <div className="project-sousTitre">Project Description</div>
+                  <div className="project-sousTitre">
+                    UI design - User research - webflow develop
+                  </div>
                 </div>
                 <div className="projet-button">
-                  <Link to="/" className="logo-link">
-                    <span className="text"></span>
+                  <Link to="/" className="project-link">
+                    <span className="text">/</span>
                   </Link>
                 </div>
               </div>
