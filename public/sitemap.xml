@@ -22,24 +22,4 @@
     </image:image>
   </url>
 
-  <url>
-    <loc>https://abdourahmanabdillahi.com/#projects</loc>
-    <lastmod>2025-01-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://abdourahmanabdillahi.com/Dalle.webp</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://abdourahmanabdillahi.com/#hire-me</loc>
-    <lastmod>2025-01-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://abdourahmanabdillahi.com/Dalle.webp</image:loc>
-    </image:image>
-  </url>
-
 </urlset>
