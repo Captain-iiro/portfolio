@@ -117,6 +117,18 @@
         margin-top: 30px;
         h1 {
             font-size: 3rem;
+            img {
+                height: 55px;
+                width: 58px;
+            }
+            &::after {
+                content: "";
+                top: 4rem;
+                width: 177px;
+            height: 15px;
+            background-size: 177px 15px;
+            transform: translateX(-15rem);
+            }
         }
         .projects-container {
             grid-template-columns: repeat(1, 338px);
