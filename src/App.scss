@@ -18,33 +18,7 @@ body {
   transform: scaleX(1);
 }
 
-@media (max-width: 1220px) {
-  .Projects {
-    h1 {
-      font-size: 2.5rem;
-      img {
-        height: 50px;
-        width: 50px;
-      }
-      &::after {
-        display: none;
-      }
-    }
-    .projects-container {
-      grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
-      grid-template-rows: repeat(2, 315px);
-      justify-content: center;
-      align-items: center;
-      .project {
-        background-size: 536px 536px;
-        .project-image {
-          width: 272px;
-          height: 172px;
-        }
-      }
-    }
-  }
-}
+
 @media (max-width: 900px) {
   .Contact {
     .Contact-container {
