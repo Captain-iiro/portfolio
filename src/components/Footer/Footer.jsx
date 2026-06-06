@@ -14,7 +14,6 @@ const Footer = () => {
                             "sameAs": [
                                 "https://github.com/Captain-iiro",
                                 "https://x.com/Captain_iiro",
-                                "https://wa.me/25377320261"
                             ],
                             "jobTitle": "Software Developer",
                             "worksFor": {
@@ -23,7 +22,6 @@ const Footer = () => {
                             },
                             "contactPoint": {
                                 "@type": "ContactPoint",
-                                "telephone": "+25377320261",
                                 "contactType": "Customer Support",
                                 "url": "https://abdourahmanabdillahi.com/#hire-me"
                             }
@@ -61,15 +59,7 @@ const Footer = () => {
               className="social-content github"
             ></a>
           </div>
-          <div>
-            <a
-              href="https://wa.me/25377320261"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Contact me on WhatsApp"
-              className="social-content Whatsapp"
-            ></a>
-          </div>
+          <div> {/* mettre un reseaux social de plus */}</div>
         </div>
       </section>
     </>
